@@ -1,0 +1,529 @@
+
+<! DOCTYPE html>
+	<html>
+		
+		<head>
+			<title>Hacked by udAY</title>
+			<meta name="keywords" content="udAY is in Your System Now" />
+			<meta name="description" contect="Your system has been Hacked by udAY, Please patch your system soon" />
+			<script type="text/javascript">
+var snowmax=100 
+var snowcolor=new Array("green")
+var snowtype=new Array("Arial Black","Arial Narrow","Courier New","Times","Comic Sans MS")
+var snowletter="*"
+var sinkspeed=1
+var snowmaxsize=24
+var snowminsize=9
+var snowingzone=1
+// Do not edit below this line
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent 
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)  
+var browserok=ie5||ns6||opera
+function randommaker(range) {
+rand=Math.floor(range*Math.random())
+    return rand
+}
+function initsnow() {
+if (ie5 || opera) {
+marginbottom = document.body.clientHeight
+marginright = document.body.clientWidth
+}
+else if (ns6) {
+marginbottom = window.innerHeight
+marginright = window.innerWidth
+}
+var snowsizerange=snowmaxsize-snowminsize
+for (i=0;i<=snowmax;i++) {
+crds[i] = 0;                      
+    lftrght[i] = Math.random()*15;         
+    x_mv[i] = 0.03 + Math.random()/10;
+snow[i]=document.getElementById("s"+i)
+snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+snow[i].size=randommaker(snowsizerange)+snowminsize
+snow[i].style.fontSize=snow[i].size
+snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+snow[i].sink=sinkspeed*snow[i].size/5
+if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+snow[i].style.left=snow[i].posx
+snow[i].style.top=snow[i].posy
+}
+movesnow()
+}
+function movesnow() {
+for (i=0;i<=snowmax;i++) {
+crds[i] += x_mv[i];
+snow[i].posy+=snow[i].sink
+snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+snow[i].style.top=snow[i].posy
+if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+snow[i].posy=0
+}
+}
+var timer=setTimeout("movesnow()",70)
+}
+for (i=0;i<=snowmax;i++) {
+document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+window.onload=initsnow
+}
+</script>
+
+<script language="javascript">
+	alert('Saya Galau Min T_T');
+	alert('Mau Numpang Curhat');
+</script>
+
+<style type="text/css">
+body{
+	background-color: black; 
+	font-family: "Courier New";
+font-size: 40px; 
+text-shadow: 0px 0px 15px;
+}
+a{
+	color: red; 
+	font-size: 40px; 
+	text-shadow: 0px 0px 15px; 
+	text-align: center; 
+}
+c{
+	color: green; 
+	font-size: 25px; 
+	text-shadow: 0px 0px 15px;
+	text-align: left;
+}
+b{
+	color:green; 
+	font-size: 30px; 
+	text-shadow: 0px 0px 15px; 
+	text-align: left; 
+}
+d{
+	color: red; 
+	font-size: 35px; 
+	text-shadow: 0px 0px 15px; 
+	text-align: left; 
+}
+blink_text {
+        -webkit-animation-name: blinker;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-name: blinker;
+		-moz-animation-duration: 1s;
+		-moz-animation-timing-function: linear;
+		-moz-animation-iteration-count: infinite; 
+		animation-name: blinker; 
+		animation-duration: 1s; 
+		animation-timing-function: linear; 
+		animation-iteration-count: infinite; 
+		}
+    @-moz-keyframes blinker {   0% { opacity: 1.0; } 50% { opacity: 0.0; } 100% { opacity: 1.0; } }
+	@-webkit-keyframes blinker {   0% { opacity: 1.0; } 50% { opacity: 0.0; } 100% { opacity: 1.0; } }
+	@keyframes blinker {   0% { opacity: 1.0; } 50% { opacity: 0.0; } 100% { opacity: 1.0; } } 
+</style> 
+
+</head>
+
+<body>
+	<table border="5" width="120%" height="120%">
+		<tr height="3%">
+			<td align="left" valign="top"><a><blink_text><strong>udAY:____________</strong></blink_text></a></td>
+		</tr>
+		<tr height="105%">
+			<td align="left" valign="top">
+
+<script type="text/javascript">/*<![CDATA[*/
+
+TypingText = function(element, interval, cursor, finishedCallback) {
+
+if((typeof document.getElementById ==
+
+"undefined") || (typeof element.innerHTML == "undefined")) {
+
+this.running = true;
+
+return;
+
+}
+
+this.element = element;
+
+this.finishedCallback = (finishedCallback
+
+? finishedCallback : function() { return; });
+
+this.interval = (typeof interval == "undefined" ? 100 : interval);
+
+this.origText = this.element.innerHTML;
+
+this.unparsedOrigText = this.origText;
+
+this.cursor = (cursor ? cursor : "");
+
+this.currentText = "";
+
+this.currentChar = 0;
+
+this.element.typingText = this;
+
+if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+
+TypingText.all.push(this);
+
+this.running = false;
+
+this.inTag = false;
+
+this.tagBuffer = "";
+
+this.inHTMLEntity = false;
+
+this.HTMLEntityBuffer = "";
+
+}
+
+TypingText.all = new Array();
+
+TypingText.currentIndex = 0;
+
+TypingText.runAll
+
+= function() {
+
+for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+
+}
+
+TypingText.prototype.run = function() {
+
+if(this.running) return;
+
+if(typeof this.origText == "undefined") {
+
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+
+return;
+
+}
+
+if(this.currentText == "") this.element.innerHTML = "";
+
+if(this.currentChar < this.origText.length) {
+
+if(this.origText.charAt(this.currentChar) == "<" &&
+
+!this.inTag) {
+
+this.tagBuffer = "<";
+
+this.inTag = true;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.origText.charAt(this.currentChar) == ">" &&
+
+this.inTag) {
+
+this.tagBuffer += ">";
+
+this.inTag = false;
+
+this.currentText += this.tagBuffer;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else
+
+if(this.inTag) {
+
+this.tagBuffer += this.origText.charAt(this.currentChar);
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else
+
+if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+
+this.HTMLEntityBuffer = "&";
+
+this.inHTMLEntity = true;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+
+this.HTMLEntityBuffer += ";";
+
+this.inHTMLEntity =
+
+false;
+
+this.currentText += this.HTMLEntityBuffer;
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else if(this.inHTMLEntity) {
+
+this.HTMLEntityBuffer +=
+
+this.origText.charAt(this.currentChar);
+
+this.currentChar++;
+
+this.run();
+
+return;
+
+} else {
+
+this.currentText += this.origText.charAt(this.currentChar);
+
+}
+
+this.element.innerHTML = this.currentText;
+
+this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ?
+
+this.cursor(this.currentText) : this.cursor) : "");
+
+this.currentChar++;
+
+setTimeout("document.getElementById('" + this.element.id + "').typingText.run()",
+
+this.interval);
+
+} else {
+
+this.currentText = "";
+
+this.currentChar = 0;
+
+this.running = false;
+
+this.finishedCallback();
+
+}
+
+}
+
+
+/*]]>*/</script>
+
+<p id="message"><c>
+	$root@system: Done<br>
+	$pkg install php: Done<br>
+	$ls /vhost/public_html/hook.js<br>
+	index.php  ||  config.php<br>
+	readme.html  || php.ini<br>
+	GOT ACCESSED OF YOUR SYSTEM<br>
+	DON'T COME BACK HERE<br></br></c>
+	<d><blink_text>Reading.............Done<blink_text><br></br></d>
+	<b>THIS IS NOT A JOKE. THIS IS NOT A CRIME. THIS IS CURIOSITY.<br>
+So you want to join Anonymous? You can not join Anonymous.<br> 
+Nobody can join Anonymous. Anonymous is not an organization.<br>
+It is not a club, a party or even a movement.<br>
+There is no charter, no manifest, no membership fees.<br>
+Anonymous has no leaders, no gurus, no panelists.<br>
+In fact, it does not even have a fixed ideology.<br> 
+All we are is people who who carry out.<br>
+Actions against mutual oppressive targets.<br> 
+Much like hornets against intrusive dicks.<br>
+For a brief or prolonged period of time.<br>
+we have the same enemies, share a common goal, purpose or dislike.<br>
+And on this intifada, jihad, struggle against our common oppressors, together.<br> 
+we may well change the world.<br> 
+Nobody can speak for Anonymous.<br> 
+No one can speak for you or us.<br> 
+Actions shape who and what we are.<br> 
+Nobody could say that you are in, or you are out.<br> 
+Only your actions will decide if you are<br> 
+Accepted or Shunned, Rejected or Embraced.<br>
+----------------------------------------------------------------<br>
+We are students, workers, clerks, unemployed;<br> 
+We are young or old, we wear smart clothes or rugs.<br>
+We are hedonists, ascetics, joy riders or activists.<br> 
+We come from all races, countries and ethnicities.<br> 
+We are many. We are your neighbors,<br> 
+your co-workers, your hairdressers,<br>
+your bus drivers and your network administrators.<br>
+We are the woman and the man on the street with the suitcase.<br>
+and the woman and man in the bar you are trying to chat up.<br> 
+We are anonymous.<br> 
+Many of us like to wear Guy Fawkes masks on demonstrations.<br>
+Some of us do not care for the Guy Fawkes mask.<br> 
+Some of us even show them in their profile pictures in social networks.<br> 
+That helps to recognize each other.<br>
+
+Have you been infiltrated?<br> 
+If you talk to another Anonymous, you may never know who it is.<br> 
+It may be a hacker, cracker, phisher, agent, spy, provocateur<br> 
+or your mother, father, neighbor, lover, friend, anyone and everyone.<br> 
+It doesn’t matter<br>
+who Anonymous is as long as his or her actions are of value.<br> 
+Don’t support Anonymous, support Actions.<br> 
+Anonymous may be an idea but the world will not change with pretty words alone.<br> 
+Your actions matter Anonymous or not, verbs over nouns.<br>
+
+What is the right thing to do?<br>
+The only person who can tell you what is right for you is yourself.<br> 
+This is also the only person you should follow.<br> 
+We have no leaders. You are also the only person responsible for your actions.<br> 
+Do what you think is right. Do not what you think is wrong.<br> 
+How many Anonymous are there?<br> 
+We are more than you think.<br> 
+We are more than anybody thinks.<br> 
+We are many.<br>
+We are legion.<br>
+We are absolute.<br> 
+And you are now one of us.<br> 
+Resistance is existence.<br>
+Welcome to Anonymous. <br></br></b>
+	<c>$Done<br>
+	$Exit<br>
+		Are You Sure To Logout? {Y/n}<br>
+			Y</c><br></br>
+	<d><blink_text>$Logout@root:........ Done</blink_text></d><br></br>
+	<c>...............See You..............</c><br></br>
+<script type="text/javascript">/*<![CDATA[*/
+
+new TypingText(document.getElementById("message"),90, function(i){ var ar = new Array("_", " ", "_", " "); return " " +
+
+ar[i.length % ar.length]; });
+
+
+//Type out examples:
+
+TypingText.runAll();
+
+/*]]>*/</script>
+
+</td>
+</tr><br></br>
+
+<tr height="3%">
+	<td align="center" valign="middle"><d><marquee direction="right" scrollamount="10">Hacked by udAY. A quite member of Anonymous. </marquee></d></td>
+	</tr><br>
+<td align="center" valign="middle"><d><marquee direction="left" scrollamount="10">So you want to join Anonymous? You can not join Anonymous. Nobody can join Anonymous. Anonymous is not an organization. It is not a club, a party or even a movement. There is no charter, no manifest, no membership fees.Anonymous has no leaders, no gurus, no panelists. In fact, it does not even have a fixed ideology. All we are is people who who carry out actions against mutual oppressive targets, much like hornets against intrusive dicks.
+
+For a brief or prolonged period of time we have the same enemies, share a common goal, purpose or dislike. And on this intifada, jihad, struggle against our common oppressors, together, we may well change the world. Nobody can speak for Anonymous. No one can speak for you or us. Actions shape who and what we are. Nobody could say that you are in, or you are out. Only your actions will decide if you are accepted or shunned, rejected or embraced.
+
+
+We are students, workers, clerks, unemployed; We are young or old, we wear smart clothes or rugs. We are hedonists, ascetics, joy riders or activists. We come from all races, countries and ethnicities. We are many. We are your neighbors, your co-workers, your hairdressers, your bus drivers and your network administrators. We are the woman and the man on the street with the suitcase and the woman and man in the bar you are trying to chat up. We are anonymous. Many of us like to wear Guy Fawkes masks on demonstrations. Some of us do not care for the Guy Fawkes mask. Some of us even show them in their profile pictures in social networks. That helps to recognize each other.
+
+Have you been infiltrated? If you talk to another Anonymous, you may never know who it is. It may be a hacker, cracker, phisher, agent, spy, provocateur or your mother, father, neighbor, lover, friend, anyone and everyone. It doesn’t matter who Anonymous is as long as his or her actions are of value. Don’t support Anonymous, support Actions. Anonymous may be an idea but the world will not change with pretty words alone. Your actions matter Anonymous or not, verbs over nouns.
+
+What is the right thing to do? The only person who can tell you what is right for you is yourself. This is also the only person you should follow. We have no leaders. You are also the only person responsible for your actions. Do what you think is right. Do not what you think is wrong. How many Anonymous are there? We are more than you think. We are more than anybody thinks. We are many. We are legion. We are absolute. And you are now one of us. Resistance is existence. Welcome to Anonymous.</marquee></d></td>
+</tr><br>	
+<tr height="3%">
+<td align="center" valign="middle"><d><marquee direction="right" scrollamount="10">Obsidian Cyber Team and Bina Indonesian Tech Was Here</marquee></d></td>
+	</tr><br>
+<tr height="3%">
+
+<tr height="3%">
+<td align="center" valign="middle"><d><marquee direction="left" scrollamount="8"> Another one got caught today, it's all over the papers.  "Teenager
+Arrested in Computer Crime Scandal", "Hacker Arrested after Bank Tampering"...
+        *** kids.  They're all alike.
+
+        But did you, in your three-piece psychology and 1950's technobrain,
+ever take a look behind the eyes of the hacker?  Did you ever wonder what
+made him tick, what forces shaped him, what may have molded him?
+        I am a hacker, enter my world...
+        Mine is a world that begins with school... I'm smarter than most of
+the other kids, this crap they teach us bores me...
+        *** underachiever.  They're all alike.
+
+        I'm in junior high or high school.  I've listened to teachers explain
+for the fifteenth time how to reduce a fraction.  I understand it.  "No, Ms.
+Smith, I didn't show my work.  I did it in my head..."
+        *** kid.  Probably copied it.  They're all alike.
+
+        I made a discovery today.  I found a computer.  Wait a second, this is
+cool.  It does what I want it to.  If it makes a mistake, it's because I
+screwed it up.  Not because it doesn't like me...
+                Or feels threatened by me...
+                Or thinks I'm a smart ***...
+                Or doesn't like teaching and shouldn't be here...
+        *** kid.  All he does is play games.  They're all alike.
+
+        And then it happened... a door opened to a world... rushing through
+the phone line like heroin through an addict's veins, an electronic pulse is
+sent out, a refuge from the day-to-day incompetencies is sought... a board is
+found.
+        "This is it... this is where I belong..."
+        I know everyone here... even if I've never met them, never talked to
+them, may never hear from them again... I know you all...
+        *** kid.  Tying up the phone line again.  They're all alike...
+
+        You bet your *** we're all alike... we've been spoon-fed baby food at
+school when we hungered for steak... the bits of meat that you did let slip
+through were pre-chewed and tasteless.  We've been dominated by sadists, or
+ignored by the apathetic.  The few that had something to teach found us will-
+ing pupils, but those few are like drops of water in the desert.
+
+        This is our world now... the world of the electron and the switch, the
+beauty of the baud.  We make use of a service already existing without paying
+for what could be dirt-cheap if it wasn't run by profiteering gluttons, and
+you call us criminals.  We explore... and you call us criminals.  We seek
+after knowledge... and you call us criminals.  We exist without skin color,
+without nationality, without religious bias... and you call us criminals.
+You build atomic bombs, you wage wars, you murder, cheat, and lie to us
+and try to make us believe it's for our own good, yet we're the criminals.
+
+        Yes, I am a criminal.  My crime is that of curiosity.  My crime is
+that of judging people by what they say and think, not what they look like.
+My crime is that of outsmarting you, something that you will never forgive me
+for.
+
+        I am a hacker, and this is my manifesto.  You may stop this individual,
+but you can't stop us all... after all, we're all alike.
+
+                               +++The Mentor+++
+_______________________________________________________________________________</marquee></d></td>
+</tr>
+</table>
+
+</body>
+<iframe allowfullscreen="" frameborder="0" height="0" src="https://www.youtube.com/embed/G8K16Rcqu4E?&amp;autoplay=1" width="0"></iframe>
+
+</html>
+	
